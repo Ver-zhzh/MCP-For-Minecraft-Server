@@ -1,0 +1,25 @@
+name: SMC
+version: ${project.version}
+main: com.smc.plugin.SMCPlugin
+api-version: 1.13
+author: SMC Team
+description: Minecraft Server MCP Plugin - HTTP API for server management
+website: https://github.com/smc/minecraft-server-mcp
+load: POSTWORLD
+loadbefore: []
+depend: []
+softdepend: []
+
+# Commands (will be added in later tasks if needed)
+commands:
+  smc:
+    description: SMC plugin management command
+    usage: /<command> [reload]
+    permission: smc.admin
+    permission-message: You don't have permission to use this command
+
+# Permissions (will be added in later tasks if needed)
+permissions:
+  smc.admin:
+    description: Allows access to SMC admin commands
+    default: op

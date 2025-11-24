@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[oc]
+*.pyd
+*.so
+build/
+dist/
+wheels/
+*.egg-info
+.venv/
+venv/
+ENV/
+
+# Test coverage
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Java/Maven
+plugin/target/
+plugin/.idea/
+plugin/*.iml
+*.class
+*.jar
+!plugin/libs/*.jar
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# MCP
+smc-server.log
+*.log.*
+
+# Temporary
+*.tmp
+*.bak
+*.swp

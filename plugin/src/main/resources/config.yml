@@ -1,0 +1,23 @@
+# SMC Plugin Configuration
+
+# HTTP Server Configuration
+http:
+  enabled: true
+  host: "127.0.0.1"  # Only listen on localhost for security
+  port: 8080
+  # API key will be automatically generated on first run
+  # The generated key will be displayed in the server console
+  # You can also manually set a custom key here if needed
+  api-key: "change-this-to-a-secure-random-key"
+
+# Logging Configuration
+logging:
+  buffer-size: 10000  # Number of log entries to cache in memory
+  retention-hours: 24  # How long to keep logs in memory (hours)
+
+# Command Execution Configuration
+commands:
+  timeout-seconds: 30  # Maximum time for command execution
+  blacklist:  # Commands that cannot be executed via API
+    - "stop"
+    - "restart"
