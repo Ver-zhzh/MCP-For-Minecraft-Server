@@ -60,7 +60,10 @@ A Model Context Protocol (MCP) server that enables AI assistants to manage Minec
 ### Usage Examples
 
 ```
-User: "Is my Minecraft server running?"
+User: "Connect to my Minecraft server at localhost:8080"
+AI: [Connects] "Successfully connected to Paper 1.20.4 server"
+
+User: "Is my server running?"
 AI: "Yes, your server is online running Paper 1.20.4"
 
 User: "Give everyone a diamond sword"
@@ -72,6 +75,9 @@ AI: "Found 2 errors: WorldEdit NullPointerException..."
 
 ### Available Tools
 
+- `connect` - Connect to a Minecraft server
+- `disconnect` - Disconnect from a server
+- `list_servers` - List all connected servers
 - `status` - Check server status and version
 - `plugins` - List installed plugins
 - `send_command` - Execute server commands
@@ -163,7 +169,10 @@ MIT
 ### 使用示例
 
 ```
-用户: "我的Minecraft服务器在运行吗？"
+用户: "连接到我的Minecraft服务器localhost:8080"
+AI: [连接中] "成功连接到Paper 1.20.4服务器"
+
+用户: "我的服务器在运行吗？"
 AI: "是的，您的服务器正在运行Paper 1.20.4"
 
 用户: "给所有人一把钻石剑"
@@ -175,6 +184,9 @@ AI: "发现2个错误：WorldEdit空指针异常..."
 
 ### 可用工具
 
+- `connect` - 连接到Minecraft服务器
+- `disconnect` - 断开服务器连接
+- `list_servers` - 列出所有已连接的服务器
 - `status` - 检查服务器状态和版本
 - `plugins` - 列出已安装的插件
 - `send_command` - 执行服务器命令

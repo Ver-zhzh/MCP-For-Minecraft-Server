@@ -164,8 +164,46 @@ Once configured, the MCP server provides the following tools to AI assistants:
 
 ### Available Tools
 
-#### 1. status
+#### 1. connect
+Connect to a Minecraft server using API key as identifier.
+
+**Parameters:**
+- `url` - Server API URL (e.g., http://localhost:8080)
+- `api_key` - API key for authentication
+- `timeout` - Request timeout in seconds (optional, default: 10)
+
+**Example:**
+```
+AI: "Connect to my Minecraft server at localhost:8080"
+Response: "Successfully connected to Paper 1.20.4 server"
+```
+
+#### 2. disconnect
+Disconnect from a Minecraft server by API key.
+
+**Parameters:**
+- `api_key` - API key of the server to disconnect
+
+**Example:**
+```
+AI: "Disconnect from the server"
+Response: "Successfully disconnected from server"
+```
+
+#### 3. list_servers
+List all connected Minecraft servers.
+
+**Example:**
+```
+AI: "Show me all connected servers"
+Response: "You have 2 servers connected: Server 1 (localhost:8080), Server 2 (192.168.1.100:8080)"
+```
+
+#### 4. status
 Check server connection and get version information.
+
+**Parameters:**
+- `api_key` - API key of the server to query
 
 **Example:**
 ```
@@ -173,7 +211,7 @@ AI: "What's the status of my Minecraft server?"
 Response: "The server is online, running Paper 1.20.4 (Minecraft 1.20.4)"
 ```
 
-#### 2. plugins
+#### 5. plugins
 List all installed plugins with versions and status.
 
 **Example:**
@@ -183,7 +221,7 @@ Response: "You have 5 plugins installed: WorldEdit (7.2.15, enabled),
           EssentialsX (2.20.1, enabled), ..."
 ```
 
-#### 3. send_command
+#### 6. send_command
 Execute one or more server commands.
 
 **Example:**
@@ -193,7 +231,7 @@ Command executed: "give @a diamond_sword 1"
 Response: "Command executed successfully. Gave 3 players diamond swords."
 ```
 
-#### 4. get_logs
+#### 7. get_logs
 Retrieve server logs with optional filtering.
 
 **Example:**
@@ -202,7 +240,7 @@ AI: "Show me the last 50 log entries"
 Response: "Here are the last 50 log entries: [timestamp] [INFO] Server started..."
 ```
 
-#### 5. player_list
+#### 8. player_list
 Get list of online players.
 
 **Example:**
@@ -212,7 +250,7 @@ Response: "3 players are online: Steve (ping: 45ms), Alex (ping: 67ms),
           Notch (ping: 23ms)"
 ```
 
-#### 6. get_errors
+#### 9. get_errors
 Get error logs with optional plugin filtering.
 
 **Example:**
@@ -221,14 +259,31 @@ AI: "Show me all errors from the WorldEdit plugin"
 Response: "Found 2 errors from WorldEdit: [timestamp] NullPointerException..."
 ```
 
-#### 7. get_warnings
+#### 10. get_warnings
 Get warning logs with optional plugin filtering.
+
+**Parameters:**
+- `api_key` - API key of the server to query
+- `plugin` - Filter by plugin name (optional)
+- `limit` - Maximum number of entries (optional)
 
 **Example:**
 ```
 AI: "What warnings have been logged recently?"
 Response: "Found 3 warnings: [timestamp] [WARN] Can't keep up! 
           Server overloaded..."
+```
+
+#### 11. get_commands
+Get list of all registered server commands.
+
+**Parameters:**
+- `api_key` - API key of the server to query
+
+**Example:**
+```
+AI: "What commands are available on the server?"
+Response: "Found 156 commands including: give, teleport, gamemode, time, weather..."
 ```
 
 ## Requirements
