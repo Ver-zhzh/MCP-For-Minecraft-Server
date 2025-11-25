@@ -1,6 +1,25 @@
 # Minecraft Server MCP
 
+<div align="center">
+
+[![PyPI version](https://img.shields.io/pypi/v/minecraft-server-mcp.svg)](https://pypi.org/project/minecraft-server-mcp/)
+[![Python version](https://img.shields.io/pypi/pyversions/minecraft-server-mcp.svg)](https://pypi.org/project/minecraft-server-mcp/)
+[![License](https://img.shields.io/github/license/Ver-zhzh/MCP-For-Minecraft-Server)](https://github.com/Ver-zhzh/MCP-For-Minecraft-Server/blob/main/LICENSE)
+[![Downloads](https://img.shields.io/pypi/dm/minecraft-server-mcp.svg)](https://pypi.org/project/minecraft-server-mcp/)
+
+**🎮 AI-Powered Minecraft Server Management via Model Context Protocol**
+
 [English](#english) | [中文](#中文)
+
+### Quick Install
+
+```bash
+pip install minecraft-server-mcp
+```
+
+[📦 PyPI Package](https://pypi.org/project/minecraft-server-mcp/) • [📖 Documentation](#english) • [🐛 Issues](https://github.com/Ver-zhzh/MCP-For-Minecraft-Server/issues)
+
+</div>
 
 ---
 
@@ -62,8 +81,8 @@ We recommend using [uv](https://docs.astral.sh/uv/) for Python dependency manage
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/your-username/minecraft-server-mcp.git
-cd minecraft-server-mcp
+git clone https://github.com/Ver-zhzh/MCP-For-Minecraft-Server.git
+cd MCP-For-Minecraft-Server
 ```
 
 2. **Install dependencies:**
@@ -323,6 +342,18 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 <a name="中文"></a>
 ## 📖 中文文档
 
+<div align="center">
+
+### 快速安装
+
+```bash
+pip install minecraft-server-mcp
+```
+
+[📦 PyPI 包](https://pypi.org/project/minecraft-server-mcp/) • [📖 文档](#中文文档) • [🐛 问题反馈](https://github.com/Ver-zhzh/MCP-For-Minecraft-Server/issues)
+
+</div>
+
 ### 概述
 
 **Minecraft Server MCP** 是一个 Model Context Protocol (MCP) 服务器实现，使 AI 助手能够通过标准化接口与 Minecraft 服务器进行交互和管理。该项目将 AI 能力与 Minecraft 服务器管理相结合，轻松实现：
@@ -378,8 +409,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 1. **克隆仓库:**
 
 ```bash
-git clone https://github.com/your-username/minecraft-server-mcp.git
-cd minecraft-server-mcp
+git clone https://github.com/Ver-zhzh/MCP-For-Minecraft-Server.git
+cd MCP-For-Minecraft-Server
 ```
 
 2. **安装依赖:**
